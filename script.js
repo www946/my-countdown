@@ -1,4 +1,4 @@
-// Countdown target date (अपनी तारीख यहाँ डालो)
+// Countdown target date (2025-9-24)
 const targetDate = new Date("2025-12-31T23:59:59").getTime();
 
 function updateCountdown() {
@@ -20,5 +20,5 @@ function updateCountdown() {
   document.getElementById("minutes").innerText = minutes;
   document.getElementById("seconds").innerText = seconds;
 }
-
+updateCountdown();
 setInterval(updateCountdown, 1000);
